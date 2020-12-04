@@ -67,7 +67,7 @@ dist = Distancy()
 dist.open()
 
 # Input your postal codes here (int)
-d = dist.inputs(560578, 808796)
+d = dist.inputs(123456, 123456)
 
 # Print distance
 print(d)
