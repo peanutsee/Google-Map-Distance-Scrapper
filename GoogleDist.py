@@ -54,6 +54,7 @@ class Distancy:
         wait.until(ec.element_to_be_clickable((By.XPATH, '//*[@id="tsf"]/div[2]/div[1]/div[2]/button'))).click()
 
         # Retrieve distance from HTML source
+        sleep(1)
         distance = self.driver.find_element_by_xpath('//*[@id="exp0"]/div[1]/div/div/span[1]/span[2]').text[:-2].trim()
 
         return distance
